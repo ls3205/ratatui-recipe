@@ -885,7 +885,7 @@ dependencies = [
 
 [[package]]
 name = "ratatui-recipe"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "ratatui",
  "ratatui-recipe-macros",
@@ -894,7 +894,7 @@ dependencies = [
 
 [[package]]
 name = "ratatui-recipe-macros"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "proc-macro2",
  "quote",

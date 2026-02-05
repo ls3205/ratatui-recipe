@@ -11,4 +11,4 @@ readme = "../../README.md"
 [dependencies]
 ratatui = "0.30.0"
 tokio = {version="1.49.0", features=["macros", "rt-multi-thread", "sync"]}
-ratatui-recipe-macros = { path = "../ratatui-recipe-macros", version="0.0.1" }
+ratatui-recipe-macros = { path = "../ratatui-recipe-macros", version="0.0.2" }
