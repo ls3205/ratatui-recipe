@@ -21,30 +21,30 @@ impl<ID> Router<ID> {
     }
 
     pub fn push(&self, id: ID) {
-        self.bus.send(RouterAction::PUSH(id));
+        let _ = self.bus.send(RouterAction::PUSH(id));
     }
 
     pub fn replace(&self, id: ID) {
-        self.bus.send(RouterAction::REPLACE(id));
+        let _ = self.bus.send(RouterAction::REPLACE(id));
     }
 
     pub fn back(&self) {
-        self.bus.send(RouterAction::BACK);
+        let _ = self.bus.send(RouterAction::BACK);
     }
 
     pub fn clear(&self) {
-        self.bus.send(RouterAction::CLEAR);
+        let _ = self.bus.send(RouterAction::CLEAR);
     }
 
     pub fn restart(&self) {
-        self.bus.send(RouterAction::RESTART);
+        let _ = self.bus.send(RouterAction::RESTART);
     }
 
     pub fn exit(&self) {
-        self.bus.send(RouterAction::EXIT);
+        let _ = self.bus.send(RouterAction::EXIT);
     }
 
     pub fn redraw(&self) {
-        self.bus.send(RouterAction::REDRAW);
+        let _ = self.bus.send(RouterAction::REDRAW);
     }
 }
