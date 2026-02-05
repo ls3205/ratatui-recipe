@@ -91,6 +91,8 @@ impl<S> App<S> {
                     if let Event::Resize(_, _) = event {
                         draw = true;
                     }
+
+                    page.on_event(event, router.clone(), &mut self.state).await;
                 },
                 Some(action) = bus_rx.recv() => {
                     match action {
