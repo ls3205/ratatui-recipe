@@ -1,0 +1,16 @@
+[package]
+name = "ratatui-recipe-macros"
+version = {workspace = true}
+edition = "2024"
+authors = ["Leon Schaumann"]
+license = "MIT"
+description = "Macros for ratatui-recipe"
+repository = "https://github.com/ls3205/ratatui-recipe"
+
+[dependencies]
+proc-macro2 = "1.0.106"
+quote = "1.0.44"
+syn = "2.0.114"
+
+[lib]
+proc-macro = true

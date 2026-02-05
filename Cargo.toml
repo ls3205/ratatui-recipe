@@ -1,12 +1,6 @@
-[package]
-name = "ratatui-recipe"
-version = "0.0.1"
-edition = "2024"
-authors = ["Leon Schaumann"]
-license = "MIT"
-description = "Async framework for Rust's TUI library, ratatui, because the other one doesn't work."
-repository = "https://github.com/ls3205/ratatui-recipe"
+[workspace]
+members = ["crates/ratatui-recipe", "crates/ratatui-recipe-macros"]
+resolver = "3"
 
-[dependencies]
-ratatui = "0.30.0"
-tokio = {version="1.49.0", features=["macros", "rt-multi-thread", "sync"]}
+[workspace.package]
+version = "0.0.1"
