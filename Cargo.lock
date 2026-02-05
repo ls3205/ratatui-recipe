@@ -888,8 +888,19 @@ name = "ratatui-recipe"
 version = "0.0.2"
 dependencies = [
  "ratatui",
- "ratatui-recipe-macros",
+ "ratatui-recipe-macros 0.0.1",
  "tokio",
+]
+
+[[package]]
+name = "ratatui-recipe-macros"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d023ef5546db667b2d82e287f7eb69bab42d62d46c6d1f34b0a0948494f69033"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 2.0.114",
 ]
 
 [[package]]
