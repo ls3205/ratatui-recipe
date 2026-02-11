@@ -16,19 +16,11 @@ What the template includes:
 - `src/pages/mod.rs` — `Pages` enum and default page
 - `src/pages/home.rs` — a tiny "Hello, world!" `StatefulPage`
 
-Generate a new project from the local template folder:
+Generate a new project from the repository:
 
 ```bash
-cargo generate --path /absolute/path/to/ratatui-recipe/template --name my-app
+cargo generate --path https://github.com/ls3205/ratatui-recipe.git
 ```
-
-Or generate from this repository using the `template` subfolder:
-
-```bash
-cargo generate --git https://github.com/ls3205/ratatui-recipe.git --name my-app template
-```
-
-If `cargo generate` creates an empty project, prefer the `--path` form (pointing directly at `template/`), or pass the `template` subfolder when using `--git`.
 
 ---
 
