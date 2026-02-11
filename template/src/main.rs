@@ -1,0 +1,16 @@
+use ratatui_recipe::App;
+
+use crate::pages::AppPages;
+
+mod pages;
+
+#[derive(Default, Debug)]
+pub struct GlobalState {}
+
+#[tokio::main]
+async fn main() {
+    let state = GlobalState::default();
+    let mut app = App::stateful(state);
+
+    app.run::<AppPages>().await.unwrap();
+}
